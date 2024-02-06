@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <main class="container py-5">
+        <section>
+            <header>
+                <h1 class="mb-4">Curriculum Vitae Submission</h1>
+            </header>
+            <div class="row">
+                <article class="col-12">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Upload PDF</h2>
+                            <p class="card-text">Select a PDF file from your device to submit your CV.</p>
+                            <a href="{{ url_for('auth.upload_cv') }}" class="btn btn-primary">Upload PDF</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Manual Input</h2>
+                            <p class="card-text">Manually enter the information contained in your CV.</p>
+                            <a href="{{ url_for('auth.user_form') }}" class="btn btn-primary">Input Manually</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title">Postpone Submission</h2>
+                            <p class="card-text">Choose to not upload CV details at this moment.</p>
+                            <a href="{{ url_for('views.home') }}" class="btn btn-primary">Defer Upload</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+{% endblock %}

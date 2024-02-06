@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">Upload Your CV</h1>
+        <form action="{{ url_for('auth.upload_cv') }}" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="cv_pdf">CV File</label>
+                <input type="file" class="form-control-file" id="cv_pdf" name="cv_pdf" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Upload</button>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container mt-5">
+        <h1 class="mb-4">User Form</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea class="form-control" id="education" name="education" rows="5" placeholder="Education" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills</label>
+                <textarea class="form-control" id="skills" name="skills" rows="5" placeholder="Skills" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="experiences">Experiences</label>
+                <textarea class="form-control" id="experiences" name="experiences" rows="5" placeholder="Experiences" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+{% endblock %}

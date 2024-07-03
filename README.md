@@ -1,5 +1,7 @@
 This repository contains the official implementation for the paper titled "Leveraging Language Models and Audio-Driven Dynamic Facial Motion Synthesis: A New Paradigm in AI-Driven Interview Training," published in AIED 2024.
 
+**#Update:** Facial Motion synthesis now optimized for close to real time inference. Demo video can be found in the Faster-Inference folder within Demo Videos folder.
+
 ## Getting Started
 ### Installation
 Clone the repository to install SadTalker, the core component of our Avatar Generation module:
